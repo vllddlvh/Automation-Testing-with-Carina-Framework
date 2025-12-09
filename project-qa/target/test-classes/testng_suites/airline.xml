@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Carina Tests - API Airline">
+
+    <parameter name="suiteOwner" value="qpsdemo"/>
+
+    <test name="Airline API tests">
+        <classes>
+            <class name="dllv.carina.carina.demo.APIAirlineTest" />
+        </classes>
+    </test>
+
+</suite>

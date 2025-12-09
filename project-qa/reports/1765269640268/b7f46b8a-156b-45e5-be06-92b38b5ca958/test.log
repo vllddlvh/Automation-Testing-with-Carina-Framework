@@ -1,0 +1,107 @@
+[2025-12-09 08:40:41] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:40:41] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testWrongHttpMethod] STARTED at [15:40:41 2025-12-09]
+[2025-12-09 08:40:42] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:40:42 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzI0MiwiaWF0IjoxNzY1MjY5NjQyLCJqdGkiOiIwMjVlMWQ3Ni1hZTA0LTQxOGUtOWM3OC1jM2EzZWYzNDMxNDQiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.SD_vJPSkSD8ycWh8TbJXx-htF_M_eCurQ5mlWn_nnXp1JQ3e-Wuk_3IJ0sD06ph2RWd2XN66pMf6xGKwBY9Yig",
+        "authenticated": true
+    }
+}
+
+[2025-12-09 08:40:42] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzI0MiwiaWF0IjoxNzY1MjY5NjQyLCJqdGkiOiIwMjVlMWQ3Ni1hZTA0LTQxOGUtOWM3OC1jM2EzZWYzNDMxNDQiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.SD_vJPSkSD8ycWh8TbJXx-htF_M_eCurQ5mlWn_nnXp1JQ3e-Wuk_3IJ0sD06ph2RWd2XN66pMf6xGKwBY9Yig
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 500 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:40:42 GMT
+Connection: close
+
+{
+    "code": 9000,
+    "message": "Request method 'POST' is not supported"
+}
+
+[2025-12-09 08:40:42] [1] [ERROR] TEST [Automation-Testing-with-Carina-Framework - testWrongHttpMethod] FAILED at [15:40:42 2025-12-09] - Status code phải là 405! expected [405] but found [500]
+
+org.testng.Assert.fail(Assert.java:110)
+org.testng.Assert.failNotEquals(Assert.java:1577)
+org.testng.Assert.assertEqualsImpl(Assert.java:149)
+org.testng.Assert.assertEquals(Assert.java:131)
+org.testng.Assert.assertEquals(Assert.java:1418)
+org.testng.Assert.assertEquals(Assert.java:1382)
+dllv.carina.carina.demo.APIUserTest.testWrongHttpMethod(APIUserTest.java:407)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

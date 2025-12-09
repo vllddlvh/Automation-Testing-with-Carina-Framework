@@ -1,0 +1,14 @@
+{
+  "code": 0,
+  "body": {
+    "userId": "skip",
+    "email": "${email}",
+    "username": "${username}",
+    "fullName": "${fullName}",
+    "phone": "${phone}",
+    "dateOfBirth": "${dateOfBirth}",
+    "gender": "${gender}",
+    "avatar": "skip",
+    "roles": "skip"
+  }
+}

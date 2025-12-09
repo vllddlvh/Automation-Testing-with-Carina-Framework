@@ -1,0 +1,5 @@
+{
+  "airlineCode": "VN-${random_id}",
+  "airlineName": "Vietnam Airlines ${random_name}",
+  "country": "Vietnam"
+}

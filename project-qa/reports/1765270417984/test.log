@@ -1,0 +1,49 @@
+[2025-12-09 08:53:37] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.gsmarena.com
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+===============================================
+
+[2025-12-09 08:53:38] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:53:39] [1] [INFO] [TestNG] Running:
+  /Users/dllv/Library/Caches/JetBrains/IntelliJIdea2023.3/temp-testng-customsuite.xml
+
+[2025-12-09 08:53:39] [1] [INFO] Set thread-count=1
+[2025-12-09 08:53:39] [1] [INFO] Set data-provider-thread-count=1
+[2025-12-09 08:53:39] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2025-12-09 08:53:43] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2025-12-09 08:53:43] [1] [INFO] RESULT #1: TEST [Automation-Testing-with-Carina-Framework - testAdminGetListSuccess] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/ab041f23-bc12-4bad-a5e6-56a7e7c053f4/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #2: TEST [Automation-Testing-with-Carina-Framework - testAdminGetMyInfo] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/e24cd167-2180-46f4-8a95-09fe72da31b9/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #3: TEST [Automation-Testing-with-Carina-Framework - testAdminGetUserDetail] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/b22cc4e3-dfbc-4194-8493-0fd05d054cb6/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #4: TEST [Automation-Testing-with-Carina-Framework - testDuplicateEmail] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/f8615533-0f4c-4594-9b34-c0c00fcec6ea/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #5: TEST [Automation-Testing-with-Carina-Framework - testDuplicatePhone] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/4bc9ef82-e6db-4951-b898-2e9e5d14d731/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #6: TEST [Automation-Testing-with-Carina-Framework - testDuplicateUsername] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/afa8709c-cfd1-41f2-bc57-2369297ecc97/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #7: TEST [Automation-Testing-with-Carina-Framework - testEmailEmpty] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/7bd7aaaa-8e42-41a9-a736-c8dc3622f767/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #8: TEST [Automation-Testing-with-Carina-Framework - testEmailNull] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/d1331d8d-d560-445f-998d-b5b6f71258c2/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #9: TEST [Automation-Testing-with-Carina-Framework - testGetDetailInvalidToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/a87c1059-9b0e-4e34-9479-a738480ff870/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #10: TEST [Automation-Testing-with-Carina-Framework - testGetDetailNoToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/32531c4e-a002-448e-b232-4795b006c792/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #11: TEST [Automation-Testing-with-Carina-Framework - testGetListInvalidToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/cf2dbadd-236a-474f-bf81-19582a30e225/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #12: TEST [Automation-Testing-with-Carina-Framework - testGetListNoToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/2fdc3e43-b3d2-4b01-b8bc-45b255e75603/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #13: TEST [Automation-Testing-with-Carina-Framework - testInvalidEmailFormat] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/fa4bca94-e208-4325-88f9-b93167ec0df1/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #14: TEST [Automation-Testing-with-Carina-Framework - testMissingDOB] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/fbfd8c7e-5d13-49b6-8f62-15d66887ae77/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #15: TEST [Automation-Testing-with-Carina-Framework - testMissingFullName] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/0af76c38-316f-4924-8607-57cc251173f5/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #16: TEST [Automation-Testing-with-Carina-Framework - testMissingGender] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/8f45d771-2d38-4b83-8fcb-dc28a3a767ce/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #17: TEST [Automation-Testing-with-Carina-Framework - testMissingPassword] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/ace8ef8d-dc67-4275-bf8c-added2ed8374/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #18: TEST [Automation-Testing-with-Carina-Framework - testMissingPhone] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/62b28271-ddaf-46de-93fc-16b05034829a/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #19: TEST [Automation-Testing-with-Carina-Framework - testMissingUsername] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/39adf16f-c7ce-4848-95c2-1d9570e4b5a8/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #20: TEST [Automation-Testing-with-Carina-Framework - testPasswordTooShort] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/d31c214a-e5d6-40c8-9a71-37b76d21ba26/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #21: TEST [Automation-Testing-with-Carina-Framework - testSignUpSuccess] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/86399fce-0042-4dd0-98e3-d7636693a37b/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #22: TEST [Automation-Testing-with-Carina-Framework - testUserGetListForbidden] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/33a84eb2-5edc-4374-ae4d-b0275628e357/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #23: TEST [Automation-Testing-with-Carina-Framework - testUserGetMyInfo] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/366de705-193c-4822-a741-48a138406a66/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #24: TEST [Automation-Testing-with-Carina-Framework - testUserNotFound] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/fdab8f09-8bce-4514-857d-6dff5afc782d/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #25: TEST [Automation-Testing-with-Carina-Framework - testUserViewOtherProfileForbidden] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/94da6571-8032-4fbb-abaf-08c84bd56f4f/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #26: TEST [Automation-Testing-with-Carina-Framework - testUsernameTooLong] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/679ed30a-9a8d-4c50-a4d5-338a2f669639/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #27: TEST [Automation-Testing-with-Carina-Framework - testUsernameTooShort] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/948a26df-9c71-44eb-86c0-ef3ef92784dd/test.log]
+[2025-12-09 08:53:43] [1] [INFO] RESULT #28: TEST [Automation-Testing-with-Carina-Framework - testWrongHttpMethod] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765270417984/91acab87-7422-4100-bd66-cb4c0c9ffa51/test.log]

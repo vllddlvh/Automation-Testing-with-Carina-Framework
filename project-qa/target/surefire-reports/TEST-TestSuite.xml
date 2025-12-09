@@ -1,0 +1,1957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.064" tests="28" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.1.0/surefire-shared-utils-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.1.0/surefire-extensions-spi-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-api/3.1.0/surefire-api-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.1.0/surefire-logger-api-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-booter/3.1.0/surefire-booter-3.1.0.jar:/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/target/test-classes:/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/target/classes:/Users/dllv/.m2/repository/com/zebrunner/carina-core/1.1.3/carina-core-1.1.3.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-webdriver/1.1.5/carina-webdriver-1.1.5.jar:/Users/dllv/.m2/repository/com/zebrunner/agent-testng-pluggable/1.9.6/agent-testng-pluggable-1.9.6.jar:/Users/dllv/.m2/repository/com/zebrunner/agent-core/1.9.6/agent-core-1.9.6.jar:/Users/dllv/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar:/Users/dllv/.m2/repository/com/konghq/unirest-java/3.13.10/unirest-java-3.13.10.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.5/httpasyncclient-4.1.5.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.0/selenium-support-4.7.0.jar:/Users/dllv/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/dllv/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/dllv/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.0/selenium-json-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.0/selenium-api-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.0/selenium-remote-driver-4.7.0.jar:/Users/dllv/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dllv/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/dllv/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/dllv/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/dllv/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/dllv/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.0/selenium-http-4.7.0.jar:/Users/dllv/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.0/selenium-manager-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.0/selenium-firefox-driver-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.0/selenium-devtools-v85-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.0/selenium-chrome-driver-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.0/selenium-chromium-driver-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.0/selenium-edge-driver-4.7.0.jar:/Users/dllv/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/dllv/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/dllv/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/dllv/.m2/repository/com/github/kklisura/cdt/cdt-java-client/4.0.0/cdt-java-client-4.0.0.jar:/Users/dllv/.m2/repository/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.jar:/Users/dllv/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.jar:/Users/dllv/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.jar:/Users/dllv/.m2/repository/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar:/Users/dllv/.m2/repository/org/apache/pdfbox/pdfbox/2.0.28/pdfbox-2.0.28.jar:/Users/dllv/.m2/repository/org/apache/pdfbox/fontbox/2.0.28/fontbox-2.0.28.jar:/Users/dllv/.m2/repository/ru/yandex/qatools/ashot/ashot/1.5.4/ashot-1.5.4.jar:/Users/dllv/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/Users/dllv/.m2/repository/com/itextpdf/itextpdf/5.5.13.3/itextpdf-5.5.13.3.jar:/Users/dllv/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/Users/dllv/.m2/repository/com/sun/jersey/jersey-core/1.19.4/jersey-core-1.19.4.jar:/Users/dllv/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar:/Users/dllv/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/dllv/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dllv/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/dllv/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar:/Users/dllv/.m2/repository/com/nordstrom/tools/testng-foundation/2.0.1/testng-foundation-2.0.1.jar:/Users/dllv/.m2/repository/com/nordstrom/tools/java-utils/1.9.3/java-utils-1.9.3.jar:/Users/dllv/.m2/repository/com/nordstrom/tools/settings/2.3.3/settings-2.3.3.jar:/Users/dllv/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-dataprovider/1.1.3/carina-dataprovider-1.1.3.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-utils/1.1.5/carina-utils-1.1.5.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-crypto/1.0.1/carina-crypto-1.0.1.jar:/Users/dllv/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dllv/.m2/repository/com/sun/jna/jna/3.0.9/jna-3.0.9.jar:/Users/dllv/.m2/repository/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar:/Users/dllv/.m2/repository/commons-net/commons-net/3.9.0/commons-net-3.9.0.jar:/Users/dllv/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/dllv/.m2/repository/net/sf/opencsv/opencsv/1.7/opencsv-1.7.jar:/Users/dllv/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/dllv/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dllv/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dllv/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/dllv/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/dllv/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/dllv/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/dllv/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/dllv/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-api/1.1.3/carina-api-1.1.3.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/dllv/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dllv/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/dllv/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/dllv/.m2/repository/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0.jar:/Users/dllv/.m2/repository/org/codehaus/groovy/groovy/3.0.2/groovy-3.0.2.jar:/Users/dllv/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.2/groovy-xml-3.0.2.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/dllv/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/dllv/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/dllv/.m2/repository/io/rest-assured/xml-path/4.3.0/xml-path-4.3.0.jar:/Users/dllv/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/dllv/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/dllv/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/dllv/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/dllv/.m2/repository/io/rest-assured/json-path/4.3.0/json-path-4.3.0.jar:/Users/dllv/.m2/repository/org/codehaus/groovy/groovy-json/3.0.2/groovy-json-3.0.2.jar:/Users/dllv/.m2/repository/io/rest-assured/rest-assured-common/4.3.0/rest-assured-common-4.3.0.jar:/Users/dllv/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/dllv/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/dllv/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/dllv/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-configuration2/2.8.0/commons-configuration2-2.8.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/dllv/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/dllv/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/dllv/.m2/repository/ognl/ognl/3.3.2/ognl-3.3.2.jar:/Users/dllv/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/Users/dllv/.m2/repository/org/xmlunit/xmlunit-assertj3/2.8.2/xmlunit-assertj3-2.8.2.jar:/Users/dllv/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/Users/dllv/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar:/Users/dllv/.m2/repository/io/rest-assured/json-schema-validator/4.3.0/json-schema-validator-4.3.0.jar:/Users/dllv/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/dllv/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/dllv/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/dllv/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/dllv/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/dllv/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/dllv/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/dllv/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/dllv/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/dllv/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/dllv/.m2/repository/org/everit/json/org.everit.json.schema/1.5.1/org.everit.json.schema-1.5.1.jar:/Users/dllv/.m2/repository/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar:/Users/dllv/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/dllv/.m2/repository/org/json/json/20160810/json-20160810.jar:/Users/dllv/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/Users/dllv/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/dllv/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-aws-s3/1.1.4/carina-aws-s3-1.1.4.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-commons/1.0.2/carina-commons-1.0.2.jar:/Users/dllv/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.12.429/aws-java-sdk-s3-1.12.429.jar:/Users/dllv/.m2/repository/com/amazonaws/aws-java-sdk-core/1.12.429/aws-java-sdk-core-1.12.429.jar:/Users/dllv/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.12.6/jackson-dataformat-cbor-2.12.6.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-azure/1.1.4/carina-azure-1.1.4.jar:/Users/dllv/.m2/repository/com/azure/azure-storage-blob/12.21.1/azure-storage-blob-12.21.1.jar:/Users/dllv/.m2/repository/com/azure/azure-core/1.37.0/azure-core-1.37.0.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.5/jackson-datatype-jsr310-2.13.5.jar:/Users/dllv/.m2/repository/io/projectreactor/reactor-core/3.4.27/reactor-core-3.4.27.jar:/Users/dllv/.m2/repository/com/azure/azure-core-http-netty/1.13.1/azure-core-http-netty-1.13.1.jar:/Users/dllv/.m2/repository/io/netty/netty-handler/4.1.89.Final/netty-handler-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-handler-proxy/4.1.89.Final/netty-handler-proxy-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec/4.1.89.Final/netty-codec-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-http2/4.1.89.Final/netty-codec-http2-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-epoll/4.1.89.Final/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.89.Final/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar:/Users/dllv/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.28/reactor-netty-http-1.0.28.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver-dns/4.1.89.Final/netty-resolver-dns-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-dns/4.1.89.Final/netty-codec-dns-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.89.Final/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.89.Final/netty-resolver-dns-classes-macos-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.28/reactor-netty-core-1.0.28.jar:/Users/dllv/.m2/repository/com/azure/azure-storage-common/12.20.1/azure-storage-common-12.20.1.jar:/Users/dllv/.m2/repository/com/azure/azure-storage-internal-avro/12.6.1/azure-storage-internal-avro-12.6.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.5/jackson-dataformat-xml-2.13.5.jar:/Users/dllv/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/Users/dllv/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.4.0/woodstox-core-6.4.0.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-appcenter/1.1.4/carina-appcenter-1.1.4.jar:/Users/dllv/.m2/repository/org/springframework/spring-web/5.3.19/spring-web-5.3.19.jar:/Users/dllv/.m2/repository/org/springframework/spring-beans/5.3.19/spring-beans-5.3.19.jar:/Users/dllv/.m2/repository/org/springframework/spring-core/5.3.19/spring-core-5.3.19.jar:/Users/dllv/.m2/repository/org/springframework/spring-jcl/5.3.19/spring-jcl-5.3.19.jar:/Users/dllv/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/dllv/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/dllv/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dllv/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/dllv/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/dllv/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/dllv/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/dllv/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/dllv/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/dllv/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/Users/dllv/.m2/repository/org/mybatis/mybatis/3.5.6/mybatis-3.5.6.jar:/Users/dllv/.m2/repository/org/postgresql/postgresql/42.5.3/postgresql-42.5.3.jar:/Users/dllv/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-testng/3.1.0/surefire-testng-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/common-java5/3.1.0/common-java5-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-grouper/3.1.0/surefire-grouper-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/3.1.0/surefire-testng-utils-3.1.0.jar"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Ho_Chi_Minh"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="reporting.enabled" value="false"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="VN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/target/surefire 2025-12-09T15-43-16_277-jvmRun1 surefire-20251209154316326_1tmp surefire_0-20251209154316326_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/target/test-classes:/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/target/classes:/Users/dllv/.m2/repository/com/zebrunner/carina-core/1.1.3/carina-core-1.1.3.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-webdriver/1.1.5/carina-webdriver-1.1.5.jar:/Users/dllv/.m2/repository/com/zebrunner/agent-testng-pluggable/1.9.6/agent-testng-pluggable-1.9.6.jar:/Users/dllv/.m2/repository/com/zebrunner/agent-core/1.9.6/agent-core-1.9.6.jar:/Users/dllv/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar:/Users/dllv/.m2/repository/com/konghq/unirest-java/3.13.10/unirest-java-3.13.10.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.13/httpcore-nio-4.4.13.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.5/httpasyncclient-4.1.5.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.0/selenium-support-4.7.0.jar:/Users/dllv/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/dllv/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/dllv/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.0/selenium-json-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.0/selenium-api-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.0/selenium-remote-driver-4.7.0.jar:/Users/dllv/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/Users/dllv/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/Users/dllv/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dllv/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/dllv/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/dllv/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/dllv/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/dllv/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.0/selenium-http-4.7.0.jar:/Users/dllv/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.0/selenium-manager-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.0/selenium-firefox-driver-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.0/selenium-devtools-v85-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.0/selenium-chrome-driver-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.0/selenium-chromium-driver-4.7.0.jar:/Users/dllv/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.0/selenium-edge-driver-4.7.0.jar:/Users/dllv/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/dllv/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/dllv/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/dllv/.m2/repository/com/github/kklisura/cdt/cdt-java-client/4.0.0/cdt-java-client-4.0.0.jar:/Users/dllv/.m2/repository/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-container-grizzly-client/1.13.1/tyrus-container-grizzly-client-1.13.1.jar:/Users/dllv/.m2/repository/org/glassfish/grizzly/grizzly-framework/2.3.25/grizzly-framework-2.3.25.jar:/Users/dllv/.m2/repository/org/glassfish/grizzly/grizzly-http-server/2.3.25/grizzly-http-server-2.3.25.jar:/Users/dllv/.m2/repository/org/glassfish/grizzly/grizzly-http/2.3.25/grizzly-http-2.3.25.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-client/1.13.1/tyrus-client-1.13.1.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-core/1.13.1/tyrus-core-1.13.1.jar:/Users/dllv/.m2/repository/org/glassfish/tyrus/tyrus-spi/1.13.1/tyrus-spi-1.13.1.jar:/Users/dllv/.m2/repository/org/apache/pdfbox/pdfbox/2.0.28/pdfbox-2.0.28.jar:/Users/dllv/.m2/repository/org/apache/pdfbox/fontbox/2.0.28/fontbox-2.0.28.jar:/Users/dllv/.m2/repository/ru/yandex/qatools/ashot/ashot/1.5.4/ashot-1.5.4.jar:/Users/dllv/.m2/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar:/Users/dllv/.m2/repository/com/itextpdf/itextpdf/5.5.13.3/itextpdf-5.5.13.3.jar:/Users/dllv/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar:/Users/dllv/.m2/repository/com/sun/jersey/jersey-core/1.19.4/jersey-core-1.19.4.jar:/Users/dllv/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar:/Users/dllv/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/dllv/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dllv/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/dllv/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar:/Users/dllv/.m2/repository/com/nordstrom/tools/testng-foundation/2.0.1/testng-foundation-2.0.1.jar:/Users/dllv/.m2/repository/com/nordstrom/tools/java-utils/1.9.3/java-utils-1.9.3.jar:/Users/dllv/.m2/repository/com/nordstrom/tools/settings/2.3.3/settings-2.3.3.jar:/Users/dllv/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-dataprovider/1.1.3/carina-dataprovider-1.1.3.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-utils/1.1.5/carina-utils-1.1.5.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-crypto/1.0.1/carina-crypto-1.0.1.jar:/Users/dllv/.m2/repository/commons-cli/commons-cli/1.5.0/commons-cli-1.5.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dllv/.m2/repository/com/sun/jna/jna/3.0.9/jna-3.0.9.jar:/Users/dllv/.m2/repository/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar:/Users/dllv/.m2/repository/commons-net/commons-net/3.9.0/commons-net-3.9.0.jar:/Users/dllv/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/dllv/.m2/repository/net/sf/opencsv/opencsv/1.7/opencsv-1.7.jar:/Users/dllv/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/dllv/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/dllv/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/dllv/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/dllv/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/dllv/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/dllv/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/dllv/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/dllv/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-api/1.1.3/carina-api-1.1.3.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/dllv/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dllv/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/dllv/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/dllv/.m2/repository/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0.jar:/Users/dllv/.m2/repository/org/codehaus/groovy/groovy/3.0.2/groovy-3.0.2.jar:/Users/dllv/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.2/groovy-xml-3.0.2.jar:/Users/dllv/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/dllv/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/dllv/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/dllv/.m2/repository/io/rest-assured/xml-path/4.3.0/xml-path-4.3.0.jar:/Users/dllv/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/dllv/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/dllv/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/dllv/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/dllv/.m2/repository/io/rest-assured/json-path/4.3.0/json-path-4.3.0.jar:/Users/dllv/.m2/repository/org/codehaus/groovy/groovy-json/3.0.2/groovy-json-3.0.2.jar:/Users/dllv/.m2/repository/io/rest-assured/rest-assured-common/4.3.0/rest-assured-common-4.3.0.jar:/Users/dllv/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/dllv/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/dllv/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/dllv/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-configuration2/2.8.0/commons-configuration2-2.8.0.jar:/Users/dllv/.m2/repository/org/apache/commons/commons-text/1.10.0/commons-text-1.10.0.jar:/Users/dllv/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/dllv/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/dllv/.m2/repository/ognl/ognl/3.3.2/ognl-3.3.2.jar:/Users/dllv/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar:/Users/dllv/.m2/repository/org/xmlunit/xmlunit-assertj3/2.8.2/xmlunit-assertj3-2.8.2.jar:/Users/dllv/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/Users/dllv/.m2/repository/org/assertj/assertj-core/3.18.1/assertj-core-3.18.1.jar:/Users/dllv/.m2/repository/io/rest-assured/json-schema-validator/4.3.0/json-schema-validator-4.3.0.jar:/Users/dllv/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.10/json-schema-validator-2.2.10.jar:/Users/dllv/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.10/json-schema-core-1.2.10.jar:/Users/dllv/.m2/repository/com/github/java-json-tools/jackson-coreutils/1.9/jackson-coreutils-1.9.jar:/Users/dllv/.m2/repository/com/github/fge/msg-simple/1.1/msg-simple-1.1.jar:/Users/dllv/.m2/repository/com/github/fge/btf/1.2/btf-1.2.jar:/Users/dllv/.m2/repository/com/github/fge/uri-template/0.9/uri-template-0.9.jar:/Users/dllv/.m2/repository/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar:/Users/dllv/.m2/repository/javax/mail/mailapi/1.4.3/mailapi-1.4.3.jar:/Users/dllv/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.0.0/libphonenumber-8.0.0.jar:/Users/dllv/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar:/Users/dllv/.m2/repository/org/everit/json/org.everit.json.schema/1.5.1/org.everit.json.schema-1.5.1.jar:/Users/dllv/.m2/repository/commons-validator/commons-validator/1.5.1/commons-validator-1.5.1.jar:/Users/dllv/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/dllv/.m2/repository/org/json/json/20160810/json-20160810.jar:/Users/dllv/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/Users/dllv/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/dllv/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-aws-s3/1.1.4/carina-aws-s3-1.1.4.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-commons/1.0.2/carina-commons-1.0.2.jar:/Users/dllv/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.12.429/aws-java-sdk-s3-1.12.429.jar:/Users/dllv/.m2/repository/com/amazonaws/aws-java-sdk-core/1.12.429/aws-java-sdk-core-1.12.429.jar:/Users/dllv/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.12.6/jackson-dataformat-cbor-2.12.6.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-azure/1.1.4/carina-azure-1.1.4.jar:/Users/dllv/.m2/repository/com/azure/azure-storage-blob/12.21.1/azure-storage-blob-12.21.1.jar:/Users/dllv/.m2/repository/com/azure/azure-core/1.37.0/azure-core-1.37.0.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.5/jackson-datatype-jsr310-2.13.5.jar:/Users/dllv/.m2/repository/io/projectreactor/reactor-core/3.4.27/reactor-core-3.4.27.jar:/Users/dllv/.m2/repository/com/azure/azure-core-http-netty/1.13.1/azure-core-http-netty-1.13.1.jar:/Users/dllv/.m2/repository/io/netty/netty-handler/4.1.89.Final/netty-handler-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-handler-proxy/4.1.89.Final/netty-handler-proxy-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec/4.1.89.Final/netty-codec-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-http2/4.1.89.Final/netty-codec-http2-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-epoll/4.1.89.Final/netty-transport-native-epoll-4.1.89.Final-linux-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.89.Final/netty-transport-native-kqueue-4.1.89.Final-osx-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-classes/2.0.56.Final/netty-tcnative-classes-2.0.56.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar:/Users/dllv/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.56.Final/netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar:/Users/dllv/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.28/reactor-netty-http-1.0.28.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver-dns/4.1.89.Final/netty-resolver-dns-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-codec-dns/4.1.89.Final/netty-codec-dns-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.89.Final/netty-resolver-dns-native-macos-4.1.89.Final-osx-x86_64.jar:/Users/dllv/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.89.Final/netty-resolver-dns-classes-macos-4.1.89.Final.jar:/Users/dllv/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.28/reactor-netty-core-1.0.28.jar:/Users/dllv/.m2/repository/com/azure/azure-storage-common/12.20.1/azure-storage-common-12.20.1.jar:/Users/dllv/.m2/repository/com/azure/azure-storage-internal-avro/12.6.1/azure-storage-internal-avro-12.6.1.jar:/Users/dllv/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.5/jackson-dataformat-xml-2.13.5.jar:/Users/dllv/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/Users/dllv/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.4.0/woodstox-core-6.4.0.jar:/Users/dllv/.m2/repository/com/zebrunner/carina-appcenter/1.1.4/carina-appcenter-1.1.4.jar:/Users/dllv/.m2/repository/org/springframework/spring-web/5.3.19/spring-web-5.3.19.jar:/Users/dllv/.m2/repository/org/springframework/spring-beans/5.3.19/spring-beans-5.3.19.jar:/Users/dllv/.m2/repository/org/springframework/spring-core/5.3.19/spring-core-5.3.19.jar:/Users/dllv/.m2/repository/org/springframework/spring-jcl/5.3.19/spring-jcl-5.3.19.jar:/Users/dllv/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/dllv/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/dllv/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dllv/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/dllv/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/dllv/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/dllv/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/dllv/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/dllv/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/dllv/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/Users/dllv/.m2/repository/org/mybatis/mybatis/3.5.6/mybatis-3.5.6.jar:/Users/dllv/.m2/repository/org/postgresql/postgresql/42.5.3/postgresql-42.5.3.jar:/Users/dllv/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/dllv"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="reporting.server.hostname" value=""/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25"/>
+    <property name="user.name" value="dllv"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="reporting.server.accessToken" value=""/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/dllv/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/pf/4bs1590j7w55klwx3kfg98ym0000gp/T/"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/dllv/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="suite" value="user"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+    <property name="reporting.run.environment" value=""/>
+  </properties>
+  <testcase name="testAdminGetListSuccess" classname="dllv.carina.carina.demo.APIUserTest" time="1.44">
+    <system-out><![CDATA[2025-12-09 15:43:17 CarinaListener [main] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.gsmarena.com
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+===============================================
+
+2025-12-09 15:43:17 TestRunRegistrar [main-3] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:19 CarinaListener [main-3] [INFO] Set thread-count=1
+2025-12-09 15:43:19 CarinaListener [main-3] [INFO] Set data-provider-thread-count=1
+2025-12-09 15:43:19 CarinaListener [main-3] [INFO] CARINA_CORE_VERSION: 1.1.3
+2025-12-09 15:43:19 TestRunRegistrar [TestNG-test=User API Tests-1] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:19 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testAdminGetListSuccess] STARTED at [15:43:19 2025-12-09]
+2025-12-09 15:43:20 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMCwiaWF0IjoxNzY1MjY5ODAwLCJqdGkiOiI5OWJhMGFkOS0xNzA3LTRmYTQtYTFiZS1hMmUyMDdhOTQzM2IiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.-MO8L7-JDcxHFgEa3pnbRlBKBu1MIVQZaIMfXZPNhZB4gA6CjDWoNM2osAMh1LWImCgMCOjatgPE1s-dTNrRVA",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:20 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMCwiaWF0IjoxNzY1MjY5ODAwLCJqdGkiOiI5OWJhMGFkOS0xNzA3LTRmYTQtYTFiZS1hMmUyMDdhOTQzM2IiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.-MO8L7-JDcxHFgEa3pnbRlBKBu1MIVQZaIMfXZPNhZB4gA6CjDWoNM2osAMh1LWImCgMCOjatgPE1s-dTNrRVA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": [
+        {
+            "userId": 1,
+            "email": "dllv@gmail.com",
+            "username": "admin",
+            "fullName": "Dao Le Long Vu",
+            "phone": "000000000",
+            "dateOfBirth": "2005-09-06",
+            "gender": "Male",
+            "avatar": null,
+            "roles": [
+                {
+                    "roleName": "ADMIN",
+                    "description": "Admin role",
+                    "permissions": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "userId": 2,
+            "email": "Daolelongvu1000@gmail.com",
+            "username": "daolelongvu",
+            "fullName": "Dao Le Long Vu",
+            "phone": "0366873718",
+            "dateOfBirth": "2005-06-05",
+            "gender": "Male",
+            "avatar": "default avatar",
+            "roles": [
+                {
+                    "roleName": "USER",
+                    "description": "User role",
+                    "permissions": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "userId": 3,
+            "email": "unique@test.com",
+            "username": "validUser",
+            "fullName": "Nguyen Van A",
+            "phone": "0987654321",
+            "dateOfBirth": "2000-01-01",
+            "gender": "Male",
+            "avatar": "default avatar",
+            "roles": [
+                {
+                    "roleName": "USER",
+                    "description": "User role",
+                    "permissions": [
+                        
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+2025-12-09 15:43:20 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testAdminGetListSuccess] PASSED at [15:43:20 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminGetMyInfo" classname="dllv.carina.carina.demo.APIUserTest" time="0.19">
+    <system-out><![CDATA[2025-12-09 15:43:20 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:20 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testAdminGetMyInfo] STARTED at [15:43:20 2025-12-09]
+2025-12-09 15:43:20 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMCwiaWF0IjoxNzY1MjY5ODAwLCJqdGkiOiI5NWQ4MGUwYy1lNzczLTRmNzAtYjk1Zi1mYTZkZmI2YzFlMDEiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.JYXZ9ziHHPH73v1MCL96Rqqf_nronPVrZzTA2LmA42uTbwaX9-DKtt7zsUiYXbI9uL-cjQAvN7FdhHjQg4izCw",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:20 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/myInfo
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMCwiaWF0IjoxNzY1MjY5ODAwLCJqdGkiOiI5NWQ4MGUwYy1lNzczLTRmNzAtYjk1Zi1mYTZkZmI2YzFlMDEiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.JYXZ9ziHHPH73v1MCL96Rqqf_nronPVrZzTA2LmA42uTbwaX9-DKtt7zsUiYXbI9uL-cjQAvN7FdhHjQg4izCw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 1,
+        "email": "dllv@gmail.com",
+        "username": "admin",
+        "fullName": "Dao Le Long Vu",
+        "phone": "000000000",
+        "dateOfBirth": "2005-09-06",
+        "gender": "Male",
+        "avatar": null,
+        "roles": [
+            {
+                "roleName": "ADMIN",
+                "description": "Admin role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:20 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testAdminGetMyInfo] PASSED at [15:43:20 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testAdminGetUserDetail" classname="dllv.carina.carina.demo.APIUserTest" time="0.188">
+    <system-out><![CDATA[2025-12-09 15:43:20 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:20 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testAdminGetUserDetail] STARTED at [15:43:20 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:20 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMCwiaWF0IjoxNzY1MjY5ODAwLCJqdGkiOiJjNTZkYzU4OC1jZWZjLTQwYWEtOTBiNC02MTU4MjlhY2EzY2MiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.omDdahmgVfK3UanKcfQlJfJWJHVbAtuFzuY74CyX7lsTtuYmYO6cV_h4dq3Ng7YFofQDK9HOCO5BGtPjksAATQ",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/2
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMCwiaWF0IjoxNzY1MjY5ODAwLCJqdGkiOiJjNTZkYzU4OC1jZWZjLTQwYWEtOTBiNC02MTU4MjlhY2EzY2MiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.omDdahmgVfK3UanKcfQlJfJWJHVbAtuFzuY74CyX7lsTtuYmYO6cV_h4dq3Ng7YFofQDK9HOCO5BGtPjksAATQ
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 2,
+        "email": "Daolelongvu1000@gmail.com",
+        "username": "daolelongvu",
+        "fullName": "Dao Le Long Vu",
+        "phone": "0366873718",
+        "dateOfBirth": "2005-06-05",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testAdminGetUserDetail] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testDuplicateEmail" classname="dllv.carina.carina.demo.APIUserTest" time="0.264">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testDuplicateEmail] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "exist_1765269801063@test.com",
+    "username": "user1765269801063",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0992440094",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 87,
+        "email": "exist_1765269801063@test.com",
+        "username": "user1765269801063",
+        "fullName": "Nguyen Van A",
+        "phone": "0992440094",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "exist_1765269801063@test.com",
+    "username": "user1765269801290",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0968508759",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 1007,
+    "message": "Email already exists!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testDuplicateEmail] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testDuplicatePhone" classname="dllv.carina.carina.demo.APIUserTest" time="0.196">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testDuplicatePhone] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269801327@test.com",
+    "username": "user1765269801327",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0943744785",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 88,
+        "email": "auto1765269801327@test.com",
+        "username": "user1765269801327",
+        "fullName": "Nguyen Van A",
+        "phone": "0943744785",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269801495@test.com",
+    "username": "user1765269801495",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0943744785",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 1009,
+    "message": "Phone already exists"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testDuplicatePhone] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testDuplicateUsername" classname="dllv.carina.carina.demo.APIUserTest" time="0.196">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testDuplicateUsername] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269801522@test.com",
+    "username": "uniqueUser9758",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0970520592",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 89,
+        "email": "auto1765269801522@test.com",
+        "username": "uniqueUser9758",
+        "fullName": "Nguyen Van A",
+        "phone": "0970520592",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269801691@test.com",
+    "username": "uniqueUser9758",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0916302385",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 1001,
+    "message": "User already exists!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testDuplicateUsername] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testEmailEmpty" classname="dllv.carina.carina.demo.APIUserTest" time="0.034">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testEmailEmpty] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "",
+    "username": "user1765269801718",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0982220048",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 1008,
+    "message": "Invalid email format!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testEmailEmpty] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testEmailNull" classname="dllv.carina.carina.demo.APIUserTest" time="0.039">
+    <failure message="code&#10;Expected: 4005&#10;     got: 1007&#10; ; message&#10;Expected: Email must not be null!&#10;     got: Email already exists!&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+	at dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+	at dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+]]></failure>
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testEmailNull] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "user1765269801756",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0913725326",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 1007,
+    "message": "Email already exists!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [ERROR] TEST [User API Tests - testEmailNull] FAILED at [15:43:21 2025-12-09] - code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1474)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetDetailInvalidToken" classname="dllv.carina.carina.demo.APIUserTest" time="0.063">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetDetailInvalidToken] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/2
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer invalid_token
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=BF4304A616D1A4AED716D67EF74CAACC; Path=/arigatouAirlines; HttpOnly
+Content-Type: application/json;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+JSESSIONID=BF4304A616D1A4AED716D67EF74CAACC;Path=/arigatouAirlines;HttpOnly
+{
+    "code": 2001,
+    "message": "Unauthenticated!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetDetailInvalidToken] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetDetailNoToken" classname="dllv.carina.carina.demo.APIUserTest" time="0.023">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetDetailNoToken] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/2
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Set-Cookie: JSESSIONID=3C44BD336832106374E2FDDEB4CB09D4; Path=/arigatouAirlines; HttpOnly
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+JSESSIONID=3C44BD336832106374E2FDDEB4CB09D4;Path=/arigatouAirlines;HttpOnly
+{
+    "code": 2001,
+    "message": "Unauthenticated!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetDetailNoToken] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetListInvalidToken" classname="dllv.carina.carina.demo.APIUserTest" time="0.008">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetListInvalidToken] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer invalid_token_xyz
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Set-Cookie: JSESSIONID=D2CDBE43763B1881E914B21A61E0E9DA; Path=/arigatouAirlines; HttpOnly
+Content-Type: application/json;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+JSESSIONID=D2CDBE43763B1881E914B21A61E0E9DA;Path=/arigatouAirlines;HttpOnly
+{
+    "code": 2001,
+    "message": "Unauthenticated!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetListInvalidToken] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetListNoToken" classname="dllv.carina.carina.demo.APIUserTest" time="0.028">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetListNoToken] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 401 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Set-Cookie: JSESSIONID=0FD1C83919BBD4A2B1238EAC68A844C6; Path=/arigatouAirlines; HttpOnly
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+JSESSIONID=0FD1C83919BBD4A2B1238EAC68A844C6;Path=/arigatouAirlines;HttpOnly
+{
+    "code": 2001,
+    "message": "Unauthenticated!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testGetListNoToken] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidEmailFormat" classname="dllv.carina.carina.demo.APIUserTest" time="0.028">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testInvalidEmailFormat] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "invalid-email",
+    "username": "user1765269801915",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0964061490",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 1008,
+    "message": "Invalid email format!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testInvalidEmailFormat] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testMissingDOB" classname="dllv.carina.carina.demo.APIUserTest" time="0.022">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingDOB] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269801944@test.com",
+    "username": "user1765269801944",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0917715707",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 4006,
+    "message": "Date of birth must not be null!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingDOB] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testMissingFullName" classname="dllv.carina.carina.demo.APIUserTest" time="0.035">
+    <system-out><![CDATA[2025-12-09 15:43:21 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingFullName] STARTED at [15:43:21 2025-12-09]
+2025-12-09 15:43:21 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269801967@test.com",
+    "username": "user1765269801967",
+    "password": "password123",
+    "phone": "0998982032",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:21 GMT
+Connection: close
+
+{
+    "code": 4009,
+    "message": "Fullname must not be null!"
+}
+
+2025-12-09 15:43:21 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingFullName] PASSED at [15:43:21 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testMissingGender" classname="dllv.carina.carina.demo.APIUserTest" time="0.025">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingGender] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802006@test.com",
+    "username": "user1765269802006",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0999310311",
+    "dateOfBirth": "2000-01-01"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 1004,
+    "message": "Gender must not be null!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingGender] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testMissingPassword" classname="dllv.carina.carina.demo.APIUserTest" time="0.018">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingPassword] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802028@test.com",
+    "username": "user1765269802028",
+    "fullName": "Nguyen Van A",
+    "phone": "0917753166",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 4003,
+    "message": "Password must not be null!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingPassword] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testMissingPhone" classname="dllv.carina.carina.demo.APIUserTest" time="0.024">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingPhone] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802048@test.com",
+    "username": "user1765269802048",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 4010,
+    "message": "Phone must not be null!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingPhone] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testMissingUsername" classname="dllv.carina.carina.demo.APIUserTest" time="0.014">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingUsername] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802070@test.com",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0981121006",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 4001,
+    "message": "Username must not be null!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testMissingUsername] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testPasswordTooShort" classname="dllv.carina.carina.demo.APIUserTest" time="0.018">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testPasswordTooShort] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802086@test.com",
+    "username": "user1765269802086",
+    "password": "123",
+    "fullName": "Nguyen Van A",
+    "phone": "0910304907",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 4004,
+    "message": "Password must be at least 8 characters!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testPasswordTooShort] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testSignUpSuccess" classname="dllv.carina.carina.demo.APIUserTest" time="0.154">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testSignUpSuccess] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802103@test.com",
+    "username": "user1765269802103",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0987501537",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 90,
+        "email": "auto1765269802103@test.com",
+        "username": "user1765269802103",
+        "fullName": "Nguyen Van A",
+        "phone": "0987501537",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testSignUpSuccess] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testUserGetListForbidden" classname="dllv.carina.carina.demo.APIUserTest" time="0.196">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserGetListForbidden] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "daolelongvu",
+    "password": "daolelongvu"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiIzZTNmODg0NC0xNTg1LTRlMmEtODI5MS05YWVhMzY0YmIxNjQiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.CqfsauyfSkNen2mGhJFPMHex3Q1Mw8CcrFGJuZcLt0ahzG1gx3jhk0PMOzmag5sMopgA4mDz9oKvG9-wcbxBsQ",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiIzZTNmODg0NC0xNTg1LTRlMmEtODI5MS05YWVhMzY0YmIxNjQiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.CqfsauyfSkNen2mGhJFPMHex3Q1Mw8CcrFGJuZcLt0ahzG1gx3jhk0PMOzmag5sMopgA4mDz9oKvG9-wcbxBsQ
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 403 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 2002,
+    "message": "You do not have permission!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserGetListForbidden] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testUserGetMyInfo" classname="dllv.carina.carina.demo.APIUserTest" time="0.157">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserGetMyInfo] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "daolelongvu",
+    "password": "daolelongvu"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiJmMjQ3MjI2Yy0wNWY5LTQ2ZTktYWQ1MC0yNTdlYzhkNWVjNDIiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.mM5G52wHn-HY4BT0KCCkFnbsx9otm8hkkPNBjIZjOrOnekjmwNkJ_K0Xk_ZuQ1v0b7EhLqr9GqFgvwGKBe5obA",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/myInfo
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiJmMjQ3MjI2Yy0wNWY5LTQ2ZTktYWQ1MC0yNTdlYzhkNWVjNDIiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.mM5G52wHn-HY4BT0KCCkFnbsx9otm8hkkPNBjIZjOrOnekjmwNkJ_K0Xk_ZuQ1v0b7EhLqr9GqFgvwGKBe5obA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 2,
+        "email": "Daolelongvu1000@gmail.com",
+        "username": "daolelongvu",
+        "fullName": "Dao Le Long Vu",
+        "phone": "0366873718",
+        "dateOfBirth": "2005-06-05",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserGetMyInfo] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testUserNotFound" classname="dllv.carina.carina.demo.APIUserTest" time="0.188">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserNotFound] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiJmMmY3MjczOC0yM2ZhLTQxYmItOWYyMC1kNDdmYzJmODIxNDkiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.H_q050DpuOy2nmiF9CzkYTnCtFMbVojfbP8UJMAyWdf1UVq383tIjYd5gK91ENKYsLDT1Rf59Qjel_1mvEtKnA",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/999999999
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiJmMmY3MjczOC0yM2ZhLTQxYmItOWYyMC1kNDdmYzJmODIxNDkiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.H_q050DpuOy2nmiF9CzkYTnCtFMbVojfbP8UJMAyWdf1UVq383tIjYd5gK91ENKYsLDT1Rf59Qjel_1mvEtKnA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 1002,
+    "message": "User does not exist!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserNotFound] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testUserViewOtherProfileForbidden" classname="dllv.carina.carina.demo.APIUserTest" time="0.161">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserViewOtherProfileForbidden] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "daolelongvu",
+    "password": "daolelongvu"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiJiYTE0MjcyNy0xMWJlLTRlZjQtYTU2Zi04MGQ1OGYxNWExNGQiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.WpnOwUwQsFluV4RdCR3Lg6_vfctW7gcgZ5czh3i4DW9sdtS-ctqEUFd-AddiRtvMTyfjsNLW_j8QZa_mA-NpHA",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/1
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3MzQwMiwiaWF0IjoxNzY1MjY5ODAyLCJqdGkiOiJiYTE0MjcyNy0xMWJlLTRlZjQtYTU2Zi04MGQ1OGYxNWExNGQiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.WpnOwUwQsFluV4RdCR3Lg6_vfctW7gcgZ5czh3i4DW9sdtS-ctqEUFd-AddiRtvMTyfjsNLW_j8QZa_mA-NpHA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 403 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 2002,
+    "message": "You do not have permission!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUserViewOtherProfileForbidden] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testUsernameTooLong" classname="dllv.carina.carina.demo.APIUserTest" time="0.014">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUsernameTooLong] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802957@test.com",
+    "username": "testUserWithNameLongerThan20Characters",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0941141657",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 4008,
+    "message": "Username must be at less than 20 characters!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUsernameTooLong] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testUsernameTooShort" classname="dllv.carina.carina.demo.APIUserTest" time="0.013">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUsernameTooShort] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:22 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765269802973@test.com",
+    "username": "abc",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0917534604",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:22 GMT
+Connection: close
+
+{
+    "code": 4002,
+    "message": "Username must be at least 6 characters!"
+}
+
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testUsernameTooShort] PASSED at [15:43:22 2025-12-09]
+]]></system-out>
+  </testcase>
+  <testcase name="testWrongHttpMethod" classname="dllv.carina.carina.demo.APIUserTest" time="0.171">
+    <system-out><![CDATA[2025-12-09 15:43:22 TestRunRegistrar [TestNG-test=User API Tests-1-47] [WARN] Reporting disabled: using no op test run registrar
+2025-12-09 15:43:22 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testWrongHttpMethod] STARTED at [15:43:22 2025-12-09]
+2025-12-09 15:43:23 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:23 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMywiaWF0IjoxNzY1MjY5ODAzLCJqdGkiOiJmOGYzYjJkYS1hZTI4LTRhYzctYjY5ZC0zZDc5ODgzNzdjYWIiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.lNHcI-kV6OWh6UVYzlp8IFB4CbYRG3wJCqHo-m4rusGhVFwBmnqwhle-xgcW1RN5r_7EdG9sJoIXADa21u1GqQ",
+        "authenticated": true
+    }
+}
+
+2025-12-09 15:43:23 AbstractApiMethod [TestNG-test=User API Tests-1-47] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3MzQwMywiaWF0IjoxNzY1MjY5ODAzLCJqdGkiOiJmOGYzYjJkYS1hZTI4LTRhYzctYjY5ZC0zZDc5ODgzNzdjYWIiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.lNHcI-kV6OWh6UVYzlp8IFB4CbYRG3wJCqHo-m4rusGhVFwBmnqwhle-xgcW1RN5r_7EdG9sJoIXADa21u1GqQ
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 500 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:43:23 GMT
+Connection: close
+
+{
+    "code": 9000,
+    "message": "Request method 'POST' is not supported"
+}
+
+2025-12-09 15:43:23 Messager [TestNG-test=User API Tests-1-47] [INFO] TEST [User API Tests - testWrongHttpMethod] PASSED at [15:43:23 2025-12-09]
+]]></system-out>
+  </testcase>
+</testsuite>

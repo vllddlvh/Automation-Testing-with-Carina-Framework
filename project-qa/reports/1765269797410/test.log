@@ -1,0 +1,46 @@
+[2025-12-09 08:43:17] [3] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.gsmarena.com
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+===============================================
+
+[2025-12-09 08:43:17] [3] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:43:19] [3] [INFO] Set thread-count=1
+[2025-12-09 08:43:19] [3] [INFO] Set data-provider-thread-count=1
+[2025-12-09 08:43:19] [3] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2025-12-09 08:43:23] [3] [INFO] INFO: '**************** Test execution summary ****************'.
+[2025-12-09 08:43:23] [3] [INFO] RESULT #1: TEST [User API Tests - testAdminGetListSuccess] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/37a17fca-0744-4dd1-a9c7-e7c1f99efc43/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #2: TEST [User API Tests - testAdminGetMyInfo] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/9affda8d-59da-4901-aa2b-cf4b0d1032ed/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #3: TEST [User API Tests - testAdminGetUserDetail] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/70f25aef-cfaf-4dfd-95ba-a0481d1a4057/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #4: TEST [User API Tests - testDuplicateEmail] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/4c500e0b-6fa5-4a2b-a2c4-c393f423f2e0/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #5: TEST [User API Tests - testDuplicatePhone] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/ed531f6c-76d7-4770-85af-b351cf5866a3/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #6: TEST [User API Tests - testDuplicateUsername] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/91c28f15-c433-43c4-ae69-9428f7e7c84a/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #7: TEST [User API Tests - testEmailEmpty] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/c746a419-43b3-45b2-9ea2-8de72ccac11d/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #8: TEST [User API Tests - testEmailNull] FAIL [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/0d7ef481-cc2e-4e84-84cf-66ee521c560a/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #9: TEST [User API Tests - testGetDetailInvalidToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/ed7bffec-c4a4-4009-8fb1-37e6b24fb078/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #10: TEST [User API Tests - testGetDetailNoToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/46dabb2a-4998-4f00-9319-096249857778/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #11: TEST [User API Tests - testGetListInvalidToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/8049d80e-f295-4e5d-a76b-7d5ab2f20435/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #12: TEST [User API Tests - testGetListNoToken] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/80f2086d-6145-47aa-953b-9e12f3df7239/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #13: TEST [User API Tests - testInvalidEmailFormat] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/97a8d64f-5c7e-4c90-aefb-16dcf64ad2dd/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #14: TEST [User API Tests - testMissingDOB] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/eebf0e17-f00f-4a07-b10f-c9a3ccb8e4b5/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #15: TEST [User API Tests - testMissingFullName] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/0f63a4b1-1cf8-44c9-9583-713a4eb71b69/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #16: TEST [User API Tests - testMissingGender] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/b98f4e15-2bc8-48cb-9890-650c20ddfb18/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #17: TEST [User API Tests - testMissingPassword] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/2cc2fdf2-b9aa-42a0-849b-a80891b1014b/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #18: TEST [User API Tests - testMissingPhone] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/2a99b587-7a62-4c59-a4c2-2a467dbe07cf/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #19: TEST [User API Tests - testMissingUsername] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/6757d2a4-19fe-4af3-aa45-2e82284abfaa/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #20: TEST [User API Tests - testPasswordTooShort] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/fdf8f017-798f-4b71-9ea0-3ce8d76c3da3/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #21: TEST [User API Tests - testSignUpSuccess] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/25b0941c-49c4-4db2-9980-a3b1e8376d87/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #22: TEST [User API Tests - testUserGetListForbidden] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/a96c294a-d52f-4d52-a171-38fbfa72bb0b/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #23: TEST [User API Tests - testUserGetMyInfo] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/727e025b-2501-4d0e-814b-37b9d80a4161/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #24: TEST [User API Tests - testUserNotFound] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/f1dcf863-c6d1-4c08-8c9d-32cb04d83b44/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #25: TEST [User API Tests - testUserViewOtherProfileForbidden] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/c7daa6c4-f601-405f-936b-a674512d3c10/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #26: TEST [User API Tests - testUsernameTooLong] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/c17bdf8f-be36-4446-aae2-c9dbe9a244f6/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #27: TEST [User API Tests - testUsernameTooShort] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/a78cc69a-f086-4e45-86e3-25171ca400bf/test.log]
+[2025-12-09 08:43:23] [3] [INFO] RESULT #28: TEST [User API Tests - testWrongHttpMethod] PASS [log=file:///Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/./reports/1765269797410/88e3dc8a-1734-43e2-9ef4-3d3692d6ce28/test.log]

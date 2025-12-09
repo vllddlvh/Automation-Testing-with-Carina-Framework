@@ -1,0 +1,9 @@
+{
+  <#if email??> "email": "${email}"<#if (username?? || password?? || fullName?? || phone?? || dateOfBirth?? || gender??)>,</#if> </#if>
+  <#if username??> "username": "${username}"<#if (password?? || fullName?? || phone?? || dateOfBirth?? || gender??)>,</#if> </#if>
+  <#if password??> "password": "${password}"<#if (fullName?? || phone?? || dateOfBirth?? || gender??)>,</#if> </#if>
+  <#if fullName??> "fullName": "${fullName}"<#if (phone?? || dateOfBirth?? || gender??)>,</#if> </#if>
+  <#if phone??> "phone": "${phone}"<#if (dateOfBirth?? || gender??)>,</#if> </#if>
+  <#if dateOfBirth??> "dateOfBirth": "${dateOfBirth}"<#if (gender??)>,</#if> </#if>
+  <#if gender??> "gender": "${gender}" </#if>
+}

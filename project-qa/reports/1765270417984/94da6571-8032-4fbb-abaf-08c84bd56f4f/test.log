@@ -1,0 +1,75 @@
+[2025-12-09 08:53:43] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:53:43] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserViewOtherProfileForbidden] STARTED at [15:53:43 2025-12-09]
+[2025-12-09 08:53:43] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "daolelongvu",
+    "password": "daolelongvu"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:53:43 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3NDAyMywiaWF0IjoxNzY1MjcwNDIzLCJqdGkiOiI3NzYxZjk4NS02MGNmLTRhYmItYTM2ZC00YjgyZjE5ZTA3NTkiLCJzY29wZSI6IlJPTEVfVVNFUiJ9._DRD6Nn2YmjnnqYD35hQl-VQD89OxCiWgHkHonSGN-cqWOAscvWqkfxZNJVQCTnHCKqo8gktwsu-WhdEK73Nvw",
+        "authenticated": true
+    }
+}
+
+[2025-12-09 08:53:43] [1] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/1
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3NDAyMywiaWF0IjoxNzY1MjcwNDIzLCJqdGkiOiI3NzYxZjk4NS02MGNmLTRhYmItYTM2ZC00YjgyZjE5ZTA3NTkiLCJzY29wZSI6IlJPTEVfVVNFUiJ9._DRD6Nn2YmjnnqYD35hQl-VQD89OxCiWgHkHonSGN-cqWOAscvWqkfxZNJVQCTnHCKqo8gktwsu-WhdEK73Nvw
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 403 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:53:43 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 2002,
+    "message": "You do not have permission!"
+}
+
+[2025-12-09 08:53:43] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserViewOtherProfileForbidden] PASSED at [15:53:43 2025-12-09]

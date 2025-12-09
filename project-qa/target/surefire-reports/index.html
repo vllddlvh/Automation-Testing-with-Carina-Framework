@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Arigatou Airlines API Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span>user.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Arigatou_Airlines_API_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">28 methods, 1 failed,   27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" class="hide-methods failed suite-Arigatou_Airlines_API_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Arigatou_Airlines_API_Test_Suite -->
+                      <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" class="show-methods failed suite-Arigatou_Airlines_API_Test_Suite"> (show)</a> <!-- show-methods failed suite-Arigatou_Airlines_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Arigatou_Airlines_API_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testEmailNull">testEmailNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Arigatou_Airlines_API_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" class="hide-methods passed suite-Arigatou_Airlines_API_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Arigatou_Airlines_API_Test_Suite -->
+                      <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" class="show-methods passed suite-Arigatou_Airlines_API_Test_Suite"> (show)</a> <!-- show-methods passed suite-Arigatou_Airlines_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Arigatou_Airlines_API_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testAdminGetListSuccess">testAdminGetListSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testAdminGetMyInfo">testAdminGetMyInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testAdminGetUserDetail">testAdminGetUserDetail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testDuplicateEmail">testDuplicateEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testDuplicatePhone">testDuplicatePhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testDuplicateUsername">testDuplicateUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testEmailEmpty">testEmailEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testGetDetailInvalidToken">testGetDetailInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testGetDetailNoToken">testGetDetailNoToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testGetListInvalidToken">testGetListInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testGetListNoToken">testGetListNoToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testInvalidEmailFormat">testInvalidEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testMissingDOB">testMissingDOB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testMissingFullName">testMissingFullName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testMissingGender">testMissingGender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testMissingPassword">testMissingPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testMissingPhone">testMissingPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testMissingUsername">testMissingUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testPasswordTooShort">testPasswordTooShort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testSignUpSuccess">testSignUpSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testUserGetListForbidden">testUserGetListForbidden</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testUserGetMyInfo">testUserGetMyInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testUserNotFound">testUserNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testUserViewOtherProfileForbidden">testUserViewOtherProfileForbidden</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testUsernameTooLong">testUsernameTooLong</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testUsernameTooShort">testUsernameTooShort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Arigatou_Airlines_API_Test_Suite" title="dllv.carina.carina.demo.APIUserTest" class="method navigator-link" hash-for-method="testWrongHttpMethod">testWrongHttpMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Arigatou_Airlines_API_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Arigatou_Airlines_API_Test_Suite" class="panel Arigatou_Airlines_API_Test_Suite">
+          <div class="suite-Arigatou_Airlines_API_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">dllv.carina.carina.demo.APIUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailNull">
+                  </a> <!-- testEmailNull -->
+                  <span class="method-name">testEmailNull</span>
+                  <div class="stack-trace">java.lang.AssertionError: code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+	at dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+	at dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Arigatou_Airlines_API_Test_Suite-class-failed -->
+          <div class="suite-Arigatou_Airlines_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">dllv.carina.carina.demo.APIUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdminGetListSuccess">
+                  </a> <!-- testAdminGetListSuccess -->
+                  <span class="method-name">testAdminGetListSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdminGetMyInfo">
+                  </a> <!-- testAdminGetMyInfo -->
+                  <span class="method-name">testAdminGetMyInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdminGetUserDetail">
+                  </a> <!-- testAdminGetUserDetail -->
+                  <span class="method-name">testAdminGetUserDetail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDuplicateEmail">
+                  </a> <!-- testDuplicateEmail -->
+                  <span class="method-name">testDuplicateEmail</span>
+                  <em>
+(TC2: Duplicate email check)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDuplicatePhone">
+                  </a> <!-- testDuplicatePhone -->
+                  <span class="method-name">testDuplicatePhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDuplicateUsername">
+                  </a> <!-- testDuplicateUsername -->
+                  <span class="method-name">testDuplicateUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailEmpty">
+                  </a> <!-- testEmailEmpty -->
+                  <span class="method-name">testEmailEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetDetailInvalidToken">
+                  </a> <!-- testGetDetailInvalidToken -->
+                  <span class="method-name">testGetDetailInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetDetailNoToken">
+                  </a> <!-- testGetDetailNoToken -->
+                  <span class="method-name">testGetDetailNoToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetListInvalidToken">
+                  </a> <!-- testGetListInvalidToken -->
+                  <span class="method-name">testGetListInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetListNoToken">
+                  </a> <!-- testGetListNoToken -->
+                  <span class="method-name">testGetListNoToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidEmailFormat">
+                  </a> <!-- testInvalidEmailFormat -->
+                  <span class="method-name">testInvalidEmailFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingDOB">
+                  </a> <!-- testMissingDOB -->
+                  <span class="method-name">testMissingDOB</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingFullName">
+                  </a> <!-- testMissingFullName -->
+                  <span class="method-name">testMissingFullName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingGender">
+                  </a> <!-- testMissingGender -->
+                  <span class="method-name">testMissingGender</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingPassword">
+                  </a> <!-- testMissingPassword -->
+                  <span class="method-name">testMissingPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingPhone">
+                  </a> <!-- testMissingPhone -->
+                  <span class="method-name">testMissingPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingUsername">
+                  </a> <!-- testMissingUsername -->
+                  <span class="method-name">testMissingUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordTooShort">
+                  </a> <!-- testPasswordTooShort -->
+                  <span class="method-name">testPasswordTooShort</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpSuccess">
+                  </a> <!-- testSignUpSuccess -->
+                  <span class="method-name">testSignUpSuccess</span>
+                  <em>
+(TC1: Sign up successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserGetListForbidden">
+                  </a> <!-- testUserGetListForbidden -->
+                  <span class="method-name">testUserGetListForbidden</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserGetMyInfo">
+                  </a> <!-- testUserGetMyInfo -->
+                  <span class="method-name">testUserGetMyInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserNotFound">
+                  </a> <!-- testUserNotFound -->
+                  <span class="method-name">testUserNotFound</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserViewOtherProfileForbidden">
+                  </a> <!-- testUserViewOtherProfileForbidden -->
+                  <span class="method-name">testUserViewOtherProfileForbidden</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsernameTooLong">
+                  </a> <!-- testUsernameTooLong -->
+                  <span class="method-name">testUsernameTooLong</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUsernameTooShort">
+                  </a> <!-- testUsernameTooShort -->
+                  <span class="method-name">testUsernameTooShort</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWrongHttpMethod">
+                  </a> <!-- testWrongHttpMethod -->
+                  <span class="method-name">testWrongHttpMethod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Arigatou_Airlines_API_Test_Suite-class-passed -->
+        </div> <!-- panel Arigatou_Airlines_API_Test_Suite -->
+        <div panel-name="test-xml-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/dllv/Documents/GitHub/Automation-Testing-with-Carina-Framework/project-qa/target/test-classes/testng_suites/user.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;1&quot; name=&quot;Arigatou Airlines API Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;User API Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;dllv.carina.carina.demo.APIUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User API Tests --&gt;
+&lt;/suite&gt; &lt;!-- Arigatou Airlines API Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Arigatou Airlines API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">User API Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Arigatou Airlines API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Arigatou Airlines API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Arigatou_Airlines_API_Test_Suite');
+function tableData_Arigatou_Airlines_API_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(28);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAdminGetListSuccess')
+data.setCell(0, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(0, 3, 1419);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testDuplicateEmail')
+data.setCell(1, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(1, 3, 260);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDuplicatePhone')
+data.setCell(2, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(2, 3, 195);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDuplicateUsername')
+data.setCell(3, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(3, 3, 194);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testUserGetListForbidden')
+data.setCell(4, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(4, 3, 194);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAdminGetMyInfo')
+data.setCell(5, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(5, 3, 189);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAdminGetUserDetail')
+data.setCell(6, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(6, 3, 187);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testUserNotFound')
+data.setCell(7, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(7, 3, 184);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testWrongHttpMethod')
+data.setCell(8, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(8, 3, 170);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testUserViewOtherProfileForbidden')
+data.setCell(9, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(9, 3, 158);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testUserGetMyInfo')
+data.setCell(10, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(10, 3, 156);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSignUpSuccess')
+data.setCell(11, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(11, 3, 152);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testGetDetailInvalidToken')
+data.setCell(12, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(12, 3, 41);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGetListInvalidToken')
+data.setCell(13, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(13, 3, 41);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testEmailEmpty')
+data.setCell(14, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(14, 3, 32);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testMissingFullName')
+data.setCell(15, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(15, 3, 31);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testGetListNoToken')
+data.setCell(16, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(16, 3, 28);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testInvalidEmailFormat')
+data.setCell(17, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(17, 3, 28);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testMissingDOB')
+data.setCell(18, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(18, 3, 23);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testMissingGender')
+data.setCell(19, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(19, 3, 23);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testGetDetailNoToken')
+data.setCell(20, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(20, 3, 22);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testMissingPhone')
+data.setCell(21, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(21, 3, 20);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testUsernameTooLong')
+data.setCell(22, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(22, 3, 17);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testPasswordTooShort')
+data.setCell(23, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(23, 3, 17);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testMissingPassword')
+data.setCell(24, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(24, 3, 17);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testMissingUsername')
+data.setCell(25, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(25, 3, 14);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testEmailNull')
+data.setCell(26, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(26, 3, 14);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testUsernameTooShort')
+data.setCell(27, 2, 'dllv.carina.carina.demo.APIUserTest')
+data.setCell(27, 3, 12);
+window.suiteTableData['Arigatou_Airlines_API_Test_Suite']= { tableData: data, tableDiv: 'times-div-Arigatou_Airlines_API_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-Arigatou_Airlines_API_Test_Suite">
+              </div> <!-- times-div-Arigatou_Airlines_API_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Arigatou Airlines API Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testEmailNull</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [User API Tests - testEmailNull] FAILED at [15:43:21 2025-12-09] - code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1474)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Arigatou_Airlines_API_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">dllv.carina.carina.demo.APIUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAdminGetListSuccess</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">1439 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testAdminGetMyInfo</span>
+                <span class="method-start">1441 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">1631 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testAdminGetUserDetail</span>
+                <span class="method-start">1632 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">1820 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDuplicateEmail</span>
+                <span class="method-start">1821 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2083 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDuplicatePhone</span>
+                <span class="method-start">2084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2280 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDuplicateUsername</span>
+                <span class="method-start">2280 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailEmpty</span>
+                <span class="method-start">2475 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2509 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEmailNull</span>
+                <span class="method-start">2511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2533 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetDetailInvalidToken</span>
+                <span class="method-start">2533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2575 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetDetailNoToken</span>
+                <span class="method-start">2576 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetListInvalidToken</span>
+                <span class="method-start">2599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2642 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetListNoToken</span>
+                <span class="method-start">2642 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testInvalidEmailFormat</span>
+                <span class="method-start">2672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2701 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMissingDOB</span>
+                <span class="method-start">2701 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMissingFullName</span>
+                <span class="method-start">2726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2760 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMissingGender</span>
+                <span class="method-start">2761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2785 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMissingPassword</span>
+                <span class="method-start">2786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMissingPhone</span>
+                <span class="method-start">2805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2805 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2827 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMissingUsername</span>
+                <span class="method-start">2828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordTooShort</span>
+                <span class="method-start">2843 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">2861 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testSignUpSuccess</span>
+                <span class="method-start">2862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUserGetListForbidden</span>
+                <span class="method-start">3016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3211 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUserGetMyInfo</span>
+                <span class="method-start">3212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUserNotFound</span>
+                <span class="method-start">3369 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3554 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUserViewOtherProfileForbidden</span>
+                <span class="method-start">3554 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3714 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUsernameTooLong</span>
+                <span class="method-start">3714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUsernameTooShort</span>
+                <span class="method-start">3732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3732 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3745 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testWrongHttpMethod</span>
+                <span class="method-start">3745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">3916 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

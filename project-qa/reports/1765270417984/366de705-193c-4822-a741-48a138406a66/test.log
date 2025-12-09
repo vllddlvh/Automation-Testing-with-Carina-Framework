@@ -1,0 +1,93 @@
+[2025-12-09 08:53:42] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:53:42] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserGetMyInfo] STARTED at [15:53:42 2025-12-09]
+[2025-12-09 08:53:43] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "daolelongvu",
+    "password": "daolelongvu"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:53:43 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3NDAyMywiaWF0IjoxNzY1MjcwNDIzLCJqdGkiOiIwY2JjYzg0Ny1jYTUwLTRmNjEtOWVjZS1mYTViOWRlOWE3M2IiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.1kOeZm5Fkfn76rj3XnAcxZ-XqcKeFcGHfZYRHj2Ry9rZvq3b35JPBQxyLm0PstLpEfWj9zKUdiK8DhuzQ1LcZA",
+        "authenticated": true
+    }
+}
+
+[2025-12-09 08:53:43] [1] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/myInfo
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJkYW9sZWxvbmd2dSIsImV4cCI6MTc2NTI3NDAyMywiaWF0IjoxNzY1MjcwNDIzLCJqdGkiOiIwY2JjYzg0Ny1jYTUwLTRmNjEtOWVjZS1mYTViOWRlOWE3M2IiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.1kOeZm5Fkfn76rj3XnAcxZ-XqcKeFcGHfZYRHj2Ry9rZvq3b35JPBQxyLm0PstLpEfWj9zKUdiK8DhuzQ1LcZA
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:53:43 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 2,
+        "email": "Daolelongvu1000@gmail.com",
+        "username": "daolelongvu",
+        "fullName": "Dao Le Long Vu",
+        "phone": "0366873718",
+        "dateOfBirth": "2005-06-05",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-09 08:53:43] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserGetMyInfo] PASSED at [15:53:43 2025-12-09]

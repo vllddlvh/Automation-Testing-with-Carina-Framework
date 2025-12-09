@@ -1,0 +1,74 @@
+[2025-12-09 08:53:43] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:53:43] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserNotFound] STARTED at [15:53:43 2025-12-09]
+[2025-12-09 08:53:43] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:53:43 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3NDAyMywiaWF0IjoxNzY1MjcwNDIzLCJqdGkiOiIzODRiZjkyMS1kMWRiLTQ2MDctODJlOS02ZmJkNzc4NmVjMGIiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.FerXCmiN-vUSggnPnQA8nTmUEmkS7FmX5vvC8At0kDXz-v8frGMrcaT7BbjNWJpjk96i-VDVHTVoQPu0y97OOg",
+        "authenticated": true
+    }
+}
+
+[2025-12-09 08:53:43] [1] [INFO] Request method:	GET
+Request URI:	http://localhost:9090/arigatouAirlines/users/999999999
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTI3NDAyMywiaWF0IjoxNzY1MjcwNDIzLCJqdGkiOiIzODRiZjkyMS1kMWRiLTQ2MDctODJlOS02ZmJkNzc4NmVjMGIiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.FerXCmiN-vUSggnPnQA8nTmUEmkS7FmX5vvC8At0kDXz-v8frGMrcaT7BbjNWJpjk96i-VDVHTVoQPu0y97OOg
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:53:43 GMT
+Connection: close
+
+{
+    "code": 1002,
+    "message": "User does not exist!"
+}
+
+[2025-12-09 08:53:43] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserNotFound] PASSED at [15:53:43 2025-12-09]

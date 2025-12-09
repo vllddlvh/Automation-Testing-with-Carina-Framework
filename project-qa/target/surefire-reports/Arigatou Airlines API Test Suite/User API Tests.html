@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>TestNG:  User API Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>User API Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 09 15:43:19 GMT+07:00 2025</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3936 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testEmailNull()'><b>testEmailNull</b><br>Test class: dllv.carina.carina.demo.APIUserTest<br/>
+<a href="#Output-1559538848" onClick='toggleBox("Output-1559538848", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559538848" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559538848">
+TEST [User API Tests - testEmailNull] FAILED at [15:43:21 2025-12-09] - code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+java.base/java.lang.Thread.run(Thread.java:1474)<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+	at dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+	at dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1559538848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1559538848'><pre>java.lang.AssertionError: code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+	at org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+	at com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+	at dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+	at dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testGetListNoToken()'><b>testGetListNoToken</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testUsernameTooLong()'><b>testUsernameTooLong</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testUsernameTooShort()'><b>testUsernameTooShort</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testAdminGetMyInfo()'><b>testAdminGetMyInfo</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testEmailEmpty()'><b>testEmailEmpty</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testAdminGetListSuccess()'><b>testAdminGetListSuccess</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>1</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testInvalidEmailFormat()'><b>testInvalidEmailFormat</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testPasswordTooShort()'><b>testPasswordTooShort</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testDuplicateUsername()'><b>testDuplicateUsername</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testMissingDOB()'><b>testMissingDOB</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testUserNotFound()'><b>testUserNotFound</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testMissingPhone()'><b>testMissingPhone</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testMissingUsername()'><b>testMissingUsername</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testAdminGetUserDetail()'><b>testAdminGetUserDetail</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testMissingPassword()'><b>testMissingPassword</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testGetDetailNoToken()'><b>testGetDetailNoToken</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testUserGetListForbidden()'><b>testUserGetListForbidden</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testMissingFullName()'><b>testMissingFullName</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testUserGetMyInfo()'><b>testUserGetMyInfo</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testGetDetailInvalidToken()'><b>testGetDetailInvalidToken</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testDuplicateEmail()'><b>testDuplicateEmail</b><br>Test class: dllv.carina.carina.demo.APIUserTest<br>Test method: TC2: Duplicate email check</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testWrongHttpMethod()'><b>testWrongHttpMethod</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testDuplicatePhone()'><b>testDuplicatePhone</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testUserViewOtherProfileForbidden()'><b>testUserViewOtherProfileForbidden</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testGetListInvalidToken()'><b>testGetListInvalidToken</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testSignUpSuccess()'><b>testSignUpSuccess</b><br>Test class: dllv.carina.carina.demo.APIUserTest<br>Test method: TC1: Sign up successfully</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+<tr>
+<td title='dllv.carina.carina.demo.APIUserTest.testMissingGender()'><b>testMissingGender</b><br>Test class: dllv.carina.carina.demo.APIUserTest</td>
+<td></td>
+<td>0</td>
+<td>dllv.carina.carina.demo.APIUserTest@2d18d9ed</td></tr>
+</table><p>
+</body>
+</html>

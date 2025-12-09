@@ -1,0 +1,42 @@
+[2025-12-09 08:46:52] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:46:52] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testMissingPassword] STARTED at [15:46:52 2025-12-09]
+[2025-12-09 08:46:52] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765270012542@test.com",
+    "username": "user1765270012542",
+    "fullName": "Nguyen Van A",
+    "phone": "0935157482",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:46:52 GMT
+Connection: close
+
+{
+    "code": 4003,
+    "message": "Password must not be null!"
+}
+
+[2025-12-09 08:46:52] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testMissingPassword] PASSED at [15:46:52 2025-12-09]

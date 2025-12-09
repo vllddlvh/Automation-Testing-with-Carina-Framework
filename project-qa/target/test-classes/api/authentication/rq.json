@@ -1,0 +1,8 @@
+{
+  <#if username??>
+    "username": "${username}"<#if password??>,</#if>
+  </#if>
+  <#if password??>
+    "password": "${password}"
+  </#if>
+}

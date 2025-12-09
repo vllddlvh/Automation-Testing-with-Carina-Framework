@@ -1,0 +1,81 @@
+[2025-12-09 08:46:52] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-09 08:46:52] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testEmailNull] STARTED at [15:46:52 2025-12-09]
+[2025-12-09 08:46:52] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "user1765270012361",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0976545816",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 09 Dec 2025 08:46:52 GMT
+Connection: close
+
+{
+    "code": 1007,
+    "message": "Email already exists!"
+}
+
+[2025-12-09 08:46:52] [1] [ERROR] TEST [Automation-Testing-with-Carina-Framework - testEmailNull] FAILED at [15:46:52 2025-12-09] - code
+Expected: 4005
+     got: 1007
+ ; message
+Expected: Email must not be null!
+     got: Email already exists!
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:363)
+dllv.carina.carina.demo.APIUserTest.validateError(APIUserTest.java:46)
+dllv.carina.carina.demo.APIUserTest.testEmailNull(APIUserTest.java:90)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
