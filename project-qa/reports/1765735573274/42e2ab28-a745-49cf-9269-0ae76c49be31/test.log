@@ -1,0 +1,138 @@
+[2025-12-14 06:06:14] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-14 06:06:14] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUpdateRoleForbidden] STARTED at [01:06:14 2025-12-15]
+[2025-12-14 06:06:15] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765735575201@test.com",
+    "username": "user1765735575201",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0999002171",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 18:06:15 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 556,
+        "email": "auto1765735575201@test.com",
+        "username": "user1765735575201",
+        "fullName": "Nguyen Van A",
+        "phone": "0999002171",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-14 06:06:16] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "user1765735575201",
+    "password": "password123"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 18:06:16 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJ1c2VyMTc2NTczNTU3NTIwMSIsImV4cCI6MTc2NTczOTE3NiwiaWF0IjoxNzY1NzM1NTc2LCJqdGkiOiIxZjRlYjJlNy02ZTJmLTQxZTEtYjRjOC1iYjI4YjUyNWVkMTUiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.PVP9VRMINeg_bdpQ0YBYwG3twwsimb9rkjAifmwPnGudkN_qBDQQHaQfoXbXu0RXl_s9Cy6gcg0Lq3-I00-88Q",
+        "authenticated": true
+    }
+}
+
+[2025-12-14 06:06:16] [1] [ERROR] TEST [Automation-Testing-with-Carina-Framework - testUpdateRoleForbidden] FAILED at [01:06:16 2025-12-15] - freemarker.core.NonSequenceOrCollectionException: For "?map(...)" left-hand operand: Expected a sequence or collection, but this has evaluated to a string (wrapper: f.t.SimpleScalar):
+==> roles  [in template "api/user/_put/rq.json" at line 12, column 36]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #assign fields += ['"roles": [' + rol...  [in template "api/user/_put/rq.json" at line 12, column 1]
+----
+
+com.zebrunner.carina.api.apitools.builder.MessageBuilder.buildStringMessage(MessageBuilder.java:53)
+com.zebrunner.carina.api.apitools.message.TemplateMessage.getMessageText(TemplateMessage.java:111)
+com.zebrunner.carina.api.AbstractApiMethodV2.initBodyContent(AbstractApiMethodV2.java:165)
+com.zebrunner.carina.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:180)
+dllv.carina.carina.demo.APIUserTest.testUpdateRoleForbidden(APIUserTest.java:629)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+org.testng.TestRunner.privateRun(TestRunner.java:829)
+org.testng.TestRunner.run(TestRunner.java:602)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+org.testng.SuiteRunner.run(SuiteRunner.java:330)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+org.testng.TestNG.runSuites(TestNG.java:1099)
+org.testng.TestNG.run(TestNG.java:1067)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)

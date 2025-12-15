@@ -1,0 +1,199 @@
+[2025-12-14 05:57:27] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-14 05:57:27] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testAdminUpdateUserSuccess] STARTED at [00:57:27 2025-12-15]
+[2025-12-14 05:57:27] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTczODY0NywiaWF0IjoxNzY1NzM1MDQ3LCJqdGkiOiI3MTY2MDI1NS05MDhmLTRhOGQtOTJiOS0yNjFmNDM0ZTM4NWMiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.MbMJbuE0-k3Ob7ihRhFoP8dtvPWRnCcT1zwqS2jAocMX71CsqsZgZzNs4WF0-ZsFIUQ3rTuUrrN0zHpt9Utxaw",
+        "authenticated": true
+    }
+}
+
+[2025-12-14 05:57:27] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765735047578@test.com",
+    "username": "user1765735047578",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0912233861",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 527,
+        "email": "auto1765735047578@test.com",
+        "username": "user1765735047578",
+        "fullName": "Nguyen Van A",
+        "phone": "0912233861",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-14 05:57:27] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "user1765735047578",
+    "password": "password123"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:27 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJ1c2VyMTc2NTczNTA0NzU3OCIsImV4cCI6MTc2NTczODY0NywiaWF0IjoxNzY1NzM1MDQ3LCJqdGkiOiI5OGI1MWI0Mi1lYjY2LTRjZTItOWFjYy04YWUwODRiMzk0YzgiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.8I9vZEAIl-nXkJQGinWnKjRUm5iKvsddsxLFNs60BH73ejN1bptwNcNACdZ5e3znYjyrSyJiyLiX8U6w6pUqZA",
+        "authenticated": true
+    }
+}
+
+[2025-12-14 05:57:28] [1] [INFO] Request method:	PUT
+Request URI:	http://localhost:9090/arigatouAirlines/users/527
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTczODY0NywiaWF0IjoxNzY1NzM1MDQ3LCJqdGkiOiI3MTY2MDI1NS05MDhmLTRhOGQtOTJiOS0yNjFmNDM0ZTM4NWMiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.MbMJbuE0-k3Ob7ihRhFoP8dtvPWRnCcT1zwqS2jAocMX71CsqsZgZzNs4WF0-ZsFIUQ3rTuUrrN0zHpt9Utxaw
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "update1765735047841@test.com",
+    "password": "newpass123",
+    "fullName": "Nguyen Van Updated",
+    "phone": "0931790870",
+    "dateOfBirth": "1995-05-05",
+    "gender": "Female"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:28 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 527,
+        "email": "update1765735047841@test.com",
+        "username": "user1765735047578",
+        "fullName": "Nguyen Van Updated",
+        "phone": "0931790870",
+        "dateOfBirth": "1995-05-05",
+        "gender": "Female",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-14 05:57:28] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testAdminUpdateUserSuccess] PASSED at [00:57:28 2025-12-15]

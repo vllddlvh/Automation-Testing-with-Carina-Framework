@@ -1,0 +1,160 @@
+[2025-12-14 05:57:36] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-14 05:57:36] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserUpdateSelfSuccess] STARTED at [00:57:36 2025-12-15]
+[2025-12-14 05:57:36] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765735056423@test.com",
+    "username": "user1765735056423",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0920818100",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 551,
+        "email": "auto1765735056423@test.com",
+        "username": "user1765735056423",
+        "fullName": "Nguyen Van A",
+        "phone": "0920818100",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-14 05:57:36] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "user1765735056423",
+    "password": "password123"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJ1c2VyMTc2NTczNTA1NjQyMyIsImV4cCI6MTc2NTczODY1NiwiaWF0IjoxNzY1NzM1MDU2LCJqdGkiOiJlYTZlNmVkZC1iOTRiLTRlNTUtODk0Zi04MTg4MGU4ODg2NTkiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.2aOuC5v5ENA2NjFnsu00MonAnh9-mi0nekwvJlPe1qKRPSy9vVkrl3HW7dwvzsEdc61lpb01TPysQDmyYQn9rA",
+        "authenticated": true
+    }
+}
+
+[2025-12-14 05:57:36] [1] [INFO] Request method:	PUT
+Request URI:	http://localhost:9090/arigatouAirlines/users/551
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJ1c2VyMTc2NTczNTA1NjQyMyIsImV4cCI6MTc2NTczODY1NiwiaWF0IjoxNzY1NzM1MDU2LCJqdGkiOiJlYTZlNmVkZC1iOTRiLTRlNTUtODk0Zi04MTg4MGU4ODg2NTkiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.2aOuC5v5ENA2NjFnsu00MonAnh9-mi0nekwvJlPe1qKRPSy9vVkrl3HW7dwvzsEdc61lpb01TPysQDmyYQn9rA
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "update1765735056692@test.com",
+    "password": "newpass123",
+    "fullName": "Nguyen Van Updated",
+    "phone": "0922181280",
+    "dateOfBirth": "1995-05-05",
+    "gender": "Female"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 17:57:36 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 551,
+        "email": "update1765735056692@test.com",
+        "username": "user1765735056423",
+        "fullName": "Nguyen Van Updated",
+        "phone": "0922181280",
+        "dateOfBirth": "1995-05-05",
+        "gender": "Female",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-14 05:57:36] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUserUpdateSelfSuccess] PASSED at [00:57:36 2025-12-15]

@@ -1,0 +1,18 @@
+{
+  "code": 0,
+  "message": "regex:(Update user successfully!|Success)",
+  "body": {
+    "userId": "regex:\\d+",
+    "username": "skip",
+    "email": "${email}",
+    "fullName": "${fullName}",
+    "phone": "${phone}",
+    "dateOfBirth": "${dateOfBirth}",
+    "gender": "${gender}",
+    "roles": "skip",
+    "status": "skip",
+    "avatar": "skip",
+    "created_at": "skip",
+    "updated_at": "skip"
+  }
+}

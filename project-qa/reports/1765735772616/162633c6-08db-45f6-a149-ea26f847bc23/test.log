@@ -1,0 +1,180 @@
+[2025-12-14 06:09:41] [1] [WARN] Reporting disabled: using no op test run registrar
+[2025-12-14 06:09:41] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUpdateInvalidGender] STARTED at [01:09:41 2025-12-15]
+[2025-12-14 06:09:41] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "admin",
+    "password": "admin"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 18:09:41 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTczOTM4MSwiaWF0IjoxNzY1NzM1NzgxLCJqdGkiOiJiNTViMDNlMi04NzBlLTQwMDEtYmViNy1jZDU3NDZlNGEzNTkiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.LlmEewWDGD2DwsnTZuKBKxgr_kkRIS-KMTyK9nQ4C_rruo5AoGJ0I09fFqNgQ73CCRFKDKUlttz351N1-n6d4g",
+        "authenticated": true
+    }
+}
+
+[2025-12-14 06:09:41] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/users/sign-up
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "auto1765735781844@test.com",
+    "username": "user1765735781844",
+    "password": "password123",
+    "fullName": "Nguyen Van A",
+    "phone": "0952370724",
+    "dateOfBirth": "2000-01-01",
+    "gender": "Male"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 18:09:41 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "userId": 575,
+        "email": "auto1765735781844@test.com",
+        "username": "user1765735781844",
+        "fullName": "Nguyen Van A",
+        "phone": "0952370724",
+        "dateOfBirth": "2000-01-01",
+        "gender": "Male",
+        "avatar": "default avatar",
+        "roles": [
+            {
+                "roleName": "USER",
+                "description": "User role",
+                "permissions": [
+                    
+                ]
+            }
+        ]
+    }
+}
+
+[2025-12-14 06:09:42] [1] [INFO] Request method:	POST
+Request URI:	http://localhost:9090/arigatouAirlines/auth/login
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "username": "user1765735781844",
+    "password": "password123"
+}
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 18:09:42 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "code": 0,
+    "body": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJ1c2VyMTc2NTczNTc4MTg0NCIsImV4cCI6MTc2NTczOTM4MiwiaWF0IjoxNzY1NzM1NzgyLCJqdGkiOiJjY2U2ZWE0Zi02NGE2LTRhMWItYmZlMS05NTY2NWUzM2ZlYWEiLCJzY29wZSI6IlJPTEVfVVNFUiJ9.qnYsje-9osUDuI59qSDaBbvHdnJjlq9PUe9v_4SIIsvDW69jpDUj_xXrbTMrIJPL1aH96Dg4ijQ8B9beHqScAw",
+        "authenticated": true
+    }
+}
+
+[2025-12-14 06:09:42] [1] [INFO] Request method:	PUT
+Request URI:	http://localhost:9090/arigatouAirlines/users/575
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJBUEktQXJpZ2F0b3UtQWlybGluZXMiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTczOTM4MSwiaWF0IjoxNzY1NzM1NzgxLCJqdGkiOiJiNTViMDNlMi04NzBlLTQwMDEtYmViNy1jZDU3NDZlNGEzNTkiLCJzY29wZSI6IlJPTEVfQURNSU4ifQ.LlmEewWDGD2DwsnTZuKBKxgr_kkRIS-KMTyK9nQ4C_rruo5AoGJ0I09fFqNgQ73CCRFKDKUlttz351N1-n6d4g
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "email": "update1765735782072@test.com",
+    "password": "newpass123",
+    "fullName": "Nguyen Van Updated",
+    "phone": "0983638142",
+    "dateOfBirth": "1995-05-05",
+    "gender": "alumium"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 14 Dec 2025 18:09:42 GMT
+Connection: close
+
+{
+    "code": 1011,
+    "message": "Invalid Gender value!"
+}
+
+[2025-12-14 06:09:42] [1] [INFO] TEST [Automation-Testing-with-Carina-Framework - testUpdateInvalidGender] PASSED at [01:09:42 2025-12-15]

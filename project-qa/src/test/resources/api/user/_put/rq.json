@@ -1,0 +1,36 @@
+<#compress>
+{
+<#assign fields = []>
+
+<#if email??>
+<#assign fields += ['"email": "' + email + '"']>
+</#if>
+
+<#if password??>
+<#assign fields += ['"password": "' + password + '"']>
+</#if>
+
+<#if fullName??>
+<#assign fields += ['"fullName": "' + fullName + '"']>
+</#if>
+
+<#if phone??>
+<#assign fields += ['"phone": "' + phone + '"']>
+</#if>
+
+<#if dateOfBirth??>
+<#assign fields += ['"dateOfBirth": "' + dateOfBirth + '"']>
+</#if>
+
+<#if gender??>
+<#assign fields += ['"gender": "' + gender + '"']>
+</#if>
+
+<#-- roles: Carina truyền sang là STRING -->
+<#if roles??>
+<#assign fields += ['"roles": ["' + roles + '"]']>
+</#if>
+
+${fields?join(",\n")}
+}
+</#compress>
